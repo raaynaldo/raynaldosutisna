@@ -6,32 +6,23 @@ export default function Home() {
     <>
       <Seo />
 
-      <main>
-        <section className='bg-dark'>
-          <div className='flex flex-col items-center justify-center min-h-screen text-white layout'>
-            <h1>
-              <CustomLink href='https://github.com/theodorusclarence/nextjs-tailwind-starter'>
-                NextJS Tailwind Starter
-              </CustomLink>
-            </h1>
-            <p className='mb-4'>
-              By{' '}
-              <CustomLink href='https://theodorusclarence.com'>
-                Theodorus Clarence
-              </CustomLink>
-            </p>
-            <CustomLink href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fnextjs-tailwind-starter'>
-              <img src='https://vercel.com/button' alt='Deploy with Vercel' />
-            </CustomLink>
-            <div className='mt-8 text-dark'>
-              <p className='text-[#ffe347]'>JIT is on</p>
-            </div>
-            <footer className='absolute text-gray-300 bottom-2'>
-              © {new Date().getFullYear()}
-            </footer>
-          </div>
-        </section>
+      <header>
+        <nav className='flex items-center justify-between h-20'>
+          <img src='/images/logo.png' alt='logo' width='50px' />
+          <ul className='flex items-center space-x-5'>
+            <li>About</li>
+            <li>Experience</li>
+            <li>Project</li>
+          </ul>
+          <button className='px-3 py-1 border-2 rounded-lg border-primary'>
+            Resume
+          </button>
+        </nav>
+      </header>
+      {/* <main>
+        <section className='bg-dark'></section>
       </main>
+      <footer></footer> */}
     </>
   );
 }
