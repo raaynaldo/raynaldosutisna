@@ -94,7 +94,7 @@ class MyDocument extends Document {
           />
           <meta name='theme-color' content='#ffffff' />
         </Head>
-        <body className='layout'>
+        <body>
           <Main />
           <NextScript />
         </body>

@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['Inter', ...fontFamily.sans],
+        firaCode: ['Fira Code'],
+        poppins: ['Poppins'],
       },
       colors: {
         // primary: {
