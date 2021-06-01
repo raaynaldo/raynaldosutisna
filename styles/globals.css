@@ -49,4 +49,20 @@
   .h-screen-minus-div {
     height: calc(100vh - 5rem);
   }
+
+  .r-letter {
+    font-size: 30rem;
+    line-height: 1;
+    user-select: none;
+    /* margin-bottom: -8.25rem !important; */
+  }
+
+  @media (min-width: 768px) {
+    .r-letter {
+      right: 0;
+      font-size: 50rem;
+      line-height: 1;
+      margin-bottom: -8.25rem !important;
+    }
+  }
 }
