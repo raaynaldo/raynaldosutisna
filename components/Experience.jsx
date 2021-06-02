@@ -50,7 +50,17 @@ export default function Experience() {
         <div className='col-span-2 p-5 border rounded-lg shadow-md'>
           <p className='text-base font-bold'>
             {experience?.title}{' '}
-            <span className='text-primary'>@{experience?.companyName}</span>
+            {experience?.companyUrl ? (
+              <a
+                className='cursor-pointer text-primary'
+                href={experience.companyUrl}
+                target='_blank'
+              >
+                @ {experience?.companyName}
+              </a>
+            ) : (
+              <span className='text-primary'>@ {experience?.companyName}</span>
+            )}
           </p>
           <p>{experience?.timeline}</p>
           <ul className='mt-4 space-y-3 list-disc list-inside'>
