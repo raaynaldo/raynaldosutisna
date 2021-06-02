@@ -24,7 +24,7 @@ export default function Home() {
               />
             </figure>
           </Link>
-          <ul className='flex items-center space-x-4 text-sm font-medium md:space-x-20 md:text-base font-firaCode'>
+          <ul className='flex items-center space-x-4 text-xs font-medium md:space-x-20 md:text-sm font-firaCode'>
             <li>
               <Link href='/#experience'>Experience</Link>
             </li>
@@ -38,7 +38,7 @@ export default function Home() {
           <a
             href='/resume.pdf'
             target='_blank'
-            className='px-3 py-1 border-2 rounded-lg md:inline border-primary text-primary font-firaCode'
+            className='px-3 py-1 text-xs border-2 rounded-lg md:text-sm md:inline border-primary text-primary font-firaCode'
           >
             Resume
           </a>
