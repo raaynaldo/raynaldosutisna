@@ -53,7 +53,7 @@ export default function Experience() {
             <span className='text-primary'>@{experience?.companyName}</span>
           </p>
           <p>{experience?.timeline}</p>
-          <ul className='mt-4 list-disc list-inside'>
+          <ul className='mt-4 space-y-3 list-disc list-inside'>
             {experience?.descriptions.map((description) => (
               <li>{description}</li>
             ))}
