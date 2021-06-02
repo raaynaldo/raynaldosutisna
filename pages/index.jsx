@@ -3,6 +3,7 @@ import CustomLink from '@/components/CustomLink';
 import { fontSize } from 'tailwindcss/defaultTheme';
 import { BsChevronDoubleDown, BsList } from 'react-icons/bs';
 import Image from 'next/image';
+import Experience from '@/components/Experience';
 
 export default function Home() {
   return (
@@ -61,7 +62,8 @@ export default function Home() {
           </span>
         </section>
 
-        <section className='flex flex-col items-center justify-center h-screen layout'>
+        <Experience />
+        {/* <section className='flex flex-col items-center justify-center h-screen layout'>
           <h1 className='text-primary'>Where I've Worked</h1>
           <select className='mx-5 mt-5 mb-3 border rounded-md md:hidden'>
             <option>VitusVet</option>
@@ -95,7 +97,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-        </section>
+        </section> */}
         {/* <footer></footer> */}
       </main>
     </>
