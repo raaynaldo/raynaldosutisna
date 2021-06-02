@@ -56,3 +56,5 @@ const experiences = [
     ],
   },
 ];
+
+export { experiences };
