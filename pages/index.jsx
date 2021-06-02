@@ -36,7 +36,7 @@ export default function Home() {
             </li>
           </ul>
           <a
-            href=''
+            href='/resume.pdf'
             target='_blank'
             className='px-3 py-1 border-2 rounded-lg md:inline border-primary text-primary font-firaCode'
           >
