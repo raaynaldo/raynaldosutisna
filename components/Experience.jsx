@@ -13,22 +13,28 @@ export default function Experience() {
   };
 
   return (
-    <section className='flex flex-col items-center justify-center h-screen layout'>
-      <h1 className='mb-5 text-primary'>Where I've Worked</h1>
+    <section
+      className='flex flex-col items-center h-screen pt-32 md:pt-52 layout'
+      id='experience'
+    >
+      <div className='grid grid-cols-none md:w-3/4 md:gap-8 md:grid-cols-3'>
+        {/* <div className='hidden md:block'></div> */}
+        <h1 className='col-span-2 mb-5 text-center md:col-start-2 md:mb-0 text-primary md:text-left'>
+          Where I've Worked
+        </h1>
 
-      <select
-        className='mx-5 mb-3 border rounded-md md:hidden'
-        onChange={(e) => changeExperienceHandler(e.target.value)}
-      >
-        {experiences.map(({ id, companyName }) => (
-          <option key={`experience-${id}`} value={id}>
-            {companyName}
-          </option>
-        ))}
-      </select>
+        <select
+          className='mx-5 mb-3 border rounded-md md:hidden'
+          onChange={(e) => changeExperienceHandler(e.target.value)}
+        >
+          {experiences.map(({ id, companyName }) => (
+            <option key={`experience-${id}`} value={id}>
+              {companyName}
+            </option>
+          ))}
+        </select>
 
-      <div class='md:flex w-full md:items-start'>
-        <div className='hidden md:w-1/4 md:space-y-4 md:block'>
+        <div className='hidden md:space-y-4 md:block'>
           {experiences.map(({ id, companyName }) => (
             <div
               key={`experience-${id}`}
@@ -41,7 +47,7 @@ export default function Experience() {
           ))}
         </div>
 
-        <div className='p-5 mx-5 border rounded-lg shadow-md md:w-3/4'>
+        <div className='col-span-2 p-5 border rounded-lg shadow-md'>
           <p className='text-base font-bold'>
             {experience?.title}{' '}
             <span className='text-primary'>@{experience?.companyName}</span>

@@ -1,9 +1,11 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 import Seo from '@/components/Seo';
-import CustomLink from '@/components/CustomLink';
+import Experience from '@/components/Experience';
+
 import { fontSize } from 'tailwindcss/defaultTheme';
 import { BsChevronDoubleDown, BsList } from 'react-icons/bs';
-import Image from 'next/image';
-import Experience from '@/components/Experience';
 
 export default function Home() {
   return (
@@ -11,30 +13,42 @@ export default function Home() {
       <Seo />
       <header className='sticky top-0 z-10 bg-white shadow-sm'>
         <nav className='flex items-center justify-between h-20 layout'>
-          <figure className='w-[30px]'>
-            <Image
-              src='/images/logo.png'
-              priority
-              width={100}
-              height={123}
-              layout='responsive'
-            />
-          </figure>
+          <Link href=''>
+            <figure className='w-[30px]'>
+              <Image
+                src='/images/logo.png'
+                priority
+                width={100}
+                height={123}
+                layout='responsive'
+              />
+            </figure>
+          </Link>
           <ul className='flex items-center space-x-4 text-sm font-medium md:space-x-20 md:text-base font-firaCode'>
-            <li>Experience</li>
-            <li>Project</li>
-            <li>About</li>
+            <li>
+              <Link href='/#experience'>Experience</Link>
+            </li>
+            <li>
+              <Link href=''>Project</Link>
+            </li>
+            <li>
+              <Link href=''>About</Link>
+            </li>
           </ul>
-          <button className='px-3 py-1 border-2 rounded-lg md:inline border-primary text-primary font-firaCode'>
+          <a
+            href=''
+            target='_blank'
+            className='px-3 py-1 border-2 rounded-lg md:inline border-primary text-primary font-firaCode'
+          >
             Resume
-          </button>
+          </a>
           {/* <button className='text-4xl text-primary md:hidden'>
             <BsList></BsList>
           </button> */}
         </nav>
       </header>
 
-      <main className='overflow-x-hidden'>
+      <main className='overflow-x-hidden' id=''>
         <section className='relative flex flex-col items-center justify-center space-y-4 md:space-y-6 h-screen-minus-div layout'>
           <h2 className='font-medium text-center md:text-4xl'>
             Hello there! My name is
