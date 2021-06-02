@@ -64,54 +64,16 @@ export default function Home() {
           <button className='px-3 py-1 text-base border-2 rounded-lg border-primary font-firaCode'>
             Get In Touch
           </button>
-          <h2 className='text-primary'>
+          <p className='absolute text-4xl text-primary bottom-10 animate-bounce'>
             <BsChevronDoubleDown />
-          </h2>
-          <span
-            // className='r-letter'
-            className='absolute font-bold md:inline -right-20 md:bottom-0 md:right-0 opacity-20 text-primary font-firaCode r-letter'
-            // style={{ fontSize: '50rem', marginBottom: '-8.25rem' }}
-          >
+          </p>
+          <span className='absolute font-bold md:inline -right-20 md:bottom-0 md:right-0 opacity-20 text-primary font-firaCode r-letter'>
             R
           </span>
         </section>
 
         <Experience />
-        {/* <section className='flex flex-col items-center justify-center h-screen layout'>
-          <h1 className='text-primary'>Where I've Worked</h1>
-          <select className='mx-5 mt-5 mb-3 border rounded-md md:hidden'>
-            <option>VitusVet</option>
-            <option>Code The Dream</option>
-            <option>Emerio Indonesia</option>
-            <option>Mitra Integrasi Informatika</option>
-            <option>Neurosot Indonesia</option>
-          </select>
-          <div className='p-5 mx-5 border rounded-lg shadow-md'>
-            <p className='text-base font-bold'>
-              Full Stack Web Developer{' '}
-              <span className='text-primary'>@Emerio Indonesia</span>
-            </p>
-            <p>November 2018 - August 2019</p>
-            <ul className='mt-4 list-disc list-inside'>
-              <li>
-                Was part of the implementation team of the Regla IFRS 9 system
-                for two of the top five banks in Indonesia.
-              </li>
-              <li>
-                Designed and built user interface IFRS9 application requirements
-                using ASP.NET Web Form.
-              </li>
-              <li>
-                Involved in software architecture design by leveraging the most
-                efficient and effective frameworks.
-              </li>
-              <li>
-                Maintained version control system (git) and mentored an
-                internship student to understand project structure.
-              </li>
-            </ul>
-          </div>
-        </section> */}
+
         {/* <footer></footer> */}
       </main>
     </>
