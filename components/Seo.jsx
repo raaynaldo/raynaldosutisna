@@ -4,9 +4,9 @@ import { useRouter } from 'next/router';
 export default function Seo(props) {
   const router = useRouter();
   const meta = {
-    title: 'Next.js Tailwind Starter',
-    description: 'A template for Next.js and Tailwindcss by Theodorus Clarence',
-    image: 'https://theodorusclarence.com/favicon/large-og.jpg',
+    title: 'Raynaldo Sutisna',
+    description: "Raynaldo' online portfolio",
+    image: 'https://raynaldosutisna.vercel.app/favicon/large-og.jpg',
     type: 'website',
     robots: 'follow, index',
     ...props,
@@ -19,21 +19,21 @@ export default function Seo(props) {
       <meta content={meta.description} name='description' />
       <meta
         property='og:url'
-        content={`https://theodorusclarence.com${router.asPath}`}
+        content={`https://raynaldosutisna.vercel.app${router.asPath}`}
       />
       <link
         rel='canonical'
-        href={`https://theodorusclarence.com${router.asPath}`}
+        href={`https://raynaldosutisna.vercel.app${router.asPath}`}
       />
       {/* Open Graph */}
       <meta property='og:type' content={meta.type} />
-      <meta property='og:site_name' content='Theodorus Clarence' />
+      <meta property='og:site_name' content='Raynaldo Sutisna' />
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
       <meta name='image' property='og:image' content={meta.image} />
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='@th_clarence' />
+      <meta name='twitter:site' content='@raaynaldo' />
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />
