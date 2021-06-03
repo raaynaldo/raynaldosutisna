@@ -4,8 +4,9 @@ import { useRouter } from 'next/router';
 export default function Seo(props) {
   const router = useRouter();
   const meta = {
-    title: 'Raynaldo Sutisna',
-    description: "Raynaldo' online portfolio",
+    title: "Raynaldo Sutisna's Portolio - raynaldosutisna.vercel.app",
+    description:
+      'Hey there 👋! Click here to know more about my experiences, projects, and blogs',
     image: 'https://raynaldosutisna.vercel.app/favicon/large-og.jpg',
     type: 'website',
     robots: 'follow, index',
