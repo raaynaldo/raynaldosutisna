@@ -57,9 +57,9 @@ export default function Home() {
             Raynaldo Sutisna
           </h1>
           <p className='max-w-xs tracking-wide text-center md:max-w-lg'>
-            I’m a Silver Spring-based full-stack Web Developer. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Na quis tempor enim.
-            Pellentesque eget malesuada arcu.
+            I’m a Silver Spring-based full-stack Web Developer. I'm passionate
+            to build scalable application and eager to learn a new technology,
+            and I love teach people.
           </p>
           <button className='px-3 py-1 text-base border-2 rounded-lg border-primary font-firaCode'>
             Get In Touch
