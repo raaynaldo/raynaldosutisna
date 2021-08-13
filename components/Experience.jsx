@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { experiences } from '@/data/experience';
+import { experiences } from '@/data/experiences';
 
 export default function Experience() {
   const [experience, setExperience] = useState(experiences[0]);

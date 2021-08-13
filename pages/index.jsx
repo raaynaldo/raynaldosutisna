@@ -6,6 +6,7 @@ import Experience from '@/components/Experience';
 
 import { fontSize } from 'tailwindcss/defaultTheme';
 import { BsChevronDoubleDown, BsList } from 'react-icons/bs';
+import ProjectList from '@/components/ProjectList';
 
 export default function Home() {
   return (
@@ -74,6 +75,7 @@ export default function Home() {
 
         <Experience />
 
+        <ProjectList />
         {/* <footer></footer> */}
       </main>
     </>
